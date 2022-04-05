@@ -5,10 +5,12 @@
  */
 function reverseString(s) {
     try{
-  console.log(Number(s.split("").reverse().join("")));
+  s=s.split("").reverse().join("");
   }
-  catch{
-      console.log("s.split is not a function");
+  catch(err){
+      console.log(err.message);
+  }
+  finally{
       console.log(s);
   }  
 }
